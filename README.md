@@ -235,7 +235,7 @@ Congratulations on reaching the end. You have completed all the tasks of running
 You can enhance the error checking in the `generate_index` script by including write permission checks with
 ```
 if [[ ! -w "$OUTPUT_DIR" ]]; then
-    echo "Error: No write permissions for $OUTPUT_DIR. Aborting." >&2
+    echo "Error: Write permissions for $OUTPUT_DIR is disabled." >&2
     exit 1
 fi
 ```
